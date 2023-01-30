@@ -1,0 +1,100 @@
+codepen: online code editor.
+
+what is javascript:
+    JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+    JavaScript is a lightweight interpreted programming language. 
+    JavaScript can update and change both HTML and CSS.
+    JavaScript can calculate, manipulate and validate data.
+
+differeence between interpreter and compiler:
+     interpreter holo sorasori source code er output ta dekhabe browser e. but compiler source code ke machine code e transfer kore then otar output ke browsser e dekhay.
+
+variable: (jetar value change hoa)
+    *variable decleare korte 5 ta jinis lagbe
+       five data types or five type of variable:
+          var price=13;(numeric)
+          var name="adiba";(string)   
+          var serious=true/false; (boolean)
+
+
+
+    *variable name jemon hobe:
+       1. variable name cannot be any js keywords or reserved word.
+           var false=54; (false is js keyword)
+       2. variable will be in one word (no space):
+           var your name="adi"; (your name bola jbena yourname or yourName or your_name bolte hbe,tobe your-name bola jbena)
+       3. variable name cannot have quotation:
+           var "name"= "adi"; (not right)
+       4. variable name cant start with a number but end with a number:
+           var 9name ="adi"; (wrong)
+           var name9="adi"; (right)
+
+
+      *variable keywords or name ar case sensitive.
+          var person=25;   var Person=25; (not same as first erta lowercase and second erta uppercase)
+
+      *Mathematical operations in JavaScript:
+        +,-,*,/,
+          x+y=z (here x and y  are operand and + is operator)
+          "/" dile vagfol
+          "%" dile vagsesh.(module operator)
+
+      *Mathematical operation shorthand:
+          *variable value update process:
+                var tomatoPrice=30;
+                    tomatoPrice=40;
+                               *value update korte only variable name dibo.surute var likhbona.
+             
+             another procedure:    tomatoPrice=tomatoPrice+10;
+             another procedure:    tomatoPrice +=10; (addition shorthand)
+                                   tomatoPrice -=10;(subtraction shorthand)
+                                   tomatoPrice *=10;(multiplication shorthand)
+                                   tomatoPrice /=10;(deduction shorthand)
+            
+            ++ = 1 kore  barbe
+            -- = 1 kore  kombe
+
+      
+      *String Concatenation, :
+              
+              var firstName= "Adiba";
+              var lastName="Mubasshirah"
+              var fullName= firstName + ''+lastName;
+
+      *type conversion, parseInt parseFloat:
+              
+              var price1='21';
+              var price2=21;
+              var price3=21.1;
+              var price4='32.4';
+
+     *Variable types, toFixed, parseFloat and remainder:
+              
+              console.log(typeof price1);
+              console.log(typeof price2);
+                   *variable er value dia na thkle ,typeof undefined dekhabe.
+
+     *js datatype:
+               primitive:number,string,boolean,null,undefined
+               non-primitive:array,object,function
+
+    *Dynamic and weak typing:
+                    JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+
+                     let foo = 42; // foo is now a number
+                     foo = "bar"; // foo is now a string
+                     foo = true; // foo is now a boolean
+
+                    JavaScript is also a weakly typed language, which means it allows implicit type conversion when an operation involves mismatched types, instead of throwing type errors.
+
+                    const foo = 42; // foo is a number
+                    const result = foo + "1"; // JavaScript coerces foo to a string, so it can be concatenated with the other operand
+                    console.log(result); // 421
+
+         *toFixed, parseFloat:
+                     var sum1=.1;
+                     var sum2=.2;
+                     var sum=sum1+sum2;
+                     sum=sum.toFixed(2);
+                     console.log(sum);
+                            * decimal er por koto ghor porjnto jbe sta fix korte toFixed use hoa.

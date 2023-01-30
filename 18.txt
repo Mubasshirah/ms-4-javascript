@@ -1,0 +1,14 @@
+Array:
+      
+      declaration: var age=[2,3,4,5,67,4]; (comma,bracket must dite hbe)
+                   var name=["adiba","adi","diba","adib"];
+
+     element sonkha: variable.length dite 
+              *console.log(name.length);
+    
+    element er position:(position starts from 0)
+                           
+
+    
+            
+             
