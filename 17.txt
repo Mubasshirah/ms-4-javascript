@@ -1,10 +1,12 @@
 codepen: online code editor.
 
-what is javascript:
+1. what is javascript:
     JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
     JavaScript is a lightweight interpreted programming language. 
     JavaScript can update and change both HTML and CSS.
     JavaScript can calculate, manipulate and validate data.
+how does js work:
+    JS is a single threaded and single concurrent programming language which means it can handle one task at a time or, in other words, a piece of code at a time. It’s an interpreted programming language, and like most scripting languages, it uses dynamic typing, where type safety is verified at the runtime. 
 
 differeence between interpreter and compiler:
      interpreter holo sorasori source code er output ta dekhabe browser e. but compiler source code ke machine code e transfer kore then otar output ke browsser e dekhay.
