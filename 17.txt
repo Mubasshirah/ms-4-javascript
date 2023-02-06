@@ -5,6 +5,8 @@ codepen: online code editor.
     JavaScript is a lightweight interpreted programming language. 
     JavaScript can update and change both HTML and CSS.
     JavaScript can calculate, manipulate and validate data.
+
+    **js makes complex interaction in website.
 how does js work:
     JS is a single threaded and single concurrent programming language which means it can handle one task at a time or, in other words, a piece of code at a time. It’s an interpreted programming language, and like most scripting languages, it uses dynamic typing, where type safety is verified at the runtime. 
 

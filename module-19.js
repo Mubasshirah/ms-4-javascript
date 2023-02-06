@@ -65,8 +65,24 @@
                         //     console.log(i);
                         // }
 
-// var i = 0;
-for (var i=0; i<5; i++){
-    console.log(i);  
-};
+// // var i = 0;
+// for (var i=0; i<5; i++){
+//     console.log(i);  
+// };
 
+                //  var mobiles=['ty','ry','py','jy','ky'];
+                //  var i=0;
+                //  while(i<mobiles.length){
+                //     console.log(mobiles[i]);
+                //     i++;
+                //  }
+
+            
+            for(var i=36;i<=86;i++){
+               
+                
+                if(i==80){
+                    break;
+                }
+                console.log(i);
+            }

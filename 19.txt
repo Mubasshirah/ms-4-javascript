@@ -96,4 +96,11 @@ var numbers=[23,43,50,54,65,55,27,29,44];
 ============================================================
 
 
-`
+using while loop show output of an array:
+                 
+                 var mobiles=['ty','ry','py','jy','ky'];
+                 var i=0;
+                 while(i<mobiles.length){
+                    console.log(mobiles[i]);
+                    i++;
+                 }

@@ -1,0 +1,203 @@
+1.slice:(akta choto ongso katar jnno.)
+                array.slice(surur index,jei index er ag porjnto katbo seta)
+        var num=[23,43,54,65,64,87,76];
+        console.log(num.slice(2,6))
+
+2.include:
+         console.log(num.includes(44));
+
+3.substring:
+          var names='ariba is reciting';
+  console.log(names.substring(0,4))
+    *last position  er ag prjnto nibe
+    *blank space keu akta index dey
+
+     *string array er moto kichuta but 100% na
+          ->index dia string er oi position er value paua jay.but new value set kora jayna.
+                        *console.log(names[0]) dile 'a' pabo
+                        but names[0]= 'x' dia set korle a er jaygay x hbena. ariba e thkbe.
+
+                        ->>string is immutable.
+
+4,function:function is a block of code,that does a specific task whenever it is called.
+              (declaration as same as variable)
+            ->->->
+               function functionName(){
+
+               }
+               functionName(parameter/argument);
+                           <-<-<-
+        *the difference between parameters and arguments:
+         Function parameters are the names listed in the function's definition. Function arguments are the real values passed to the function. Parameters are initialized to the values of the arguments supplied.
+
+
+        ***loop tana chole but function er majhe onno kj o kora jay.
+        **parameter is a special kind of varible,function ke call korar somoy jetar maan dite heb.eke khli function er vitor thekei call kora jbe.baire atar kono value  nai.
+
+     a. sum:
+           function sum(num1,num2,num3,num4){
+                console.log(num1,num2,num3,num4);
+            var add=num1+num2+num3+num4;
+            console.log('sum is',add);
+          }
+          sum(1,2,3,4)
+
+          *je koyta parameter dia hoise tar kom die fn call kora hoile undefined dekhabe je koyta dia hoani segula. ar besi dile first thk jekoyta niar nie fn execute korbe.
+
+     b. return:
+
+          **kono akta fn ke pore use korte chaile return likhte hbe.
+          **akta fn thk akta jinis e return hoa.
+          ** number,string or variable return kora jay
+
+                            function sum(num1,num2,num3,num4){
+                               var add=num1+num2+num3+num4;
+                                   
+                                    return add;
+                                           }
+                               var total= sum(1,2,3,4);
+                                 console.log(total);
+
+                -> upore return likha na hole pore var total e ar oi fn ta use kora jbena.
+
+                *fn er khtre duibr undefined ase. akbar parameter er value na dile .arekbar return na kore onno kothau call korle.
+                *console.log kore just fn er value ta dekhano jbe.but fn ta ar kothau use kora jbena.but return likhle jjbe.
+
+                                function average(ass1,ass2,ass3){
+                                var total=ass1+ass2+ass3;
+                                var avr=total/3;
+                                return avr;
+                            }
+                            var avr1=average(2,3,4);
+                            var avr2=average(4,4,4);
+                            var avr3=average(3,3,3);
+                            var totalAvr=average(avr1,avr2,avr3);
+                            console.log('average is:',totalAvr);
+
+                            *return use na korle bar bar fn ke call korte partmna.
+
+
+        ->->-> there might be 4 types of situations:
+                           1.no return,no parameter ->fruits dilam o na,juice pelam o na
+                           2.no return,has parameter ->fruits dilam but juice pailmna
+                           3.has return,no parameter ->fruits dilmna but juice pailmn
+                           4.has return,has parameter -> fruits dilam,juice o pailm 
+
+
+5.object:  
+           sample:            propertiy:value
+              var student={
+                name:'adi',
+                id:1,
+                marks:90,
+                age:30
+              }
+              console.log(student)
+              *kono akta specific property er value paite student.id or student.age evabe dite hve
+              * ar set korte 3 ways: -> student.age=40 or student.id=2 dite hbe
+                             -> student['age']=50
+                             ->var propertyNAme='marks';
+                             student[propertyNAme]=100;
+                            console.log(student)
+
+                   console.log(student.age)
+                              student.age=50;
+                              console.log(student);
+              *another way to get the value of a property:  console.log(student['marks'])
+
+              -> sob property array akare paite: console.log(Object.keys(student))
+              -> sob values array akare paite: console.log(Object.values(student))
+              -> akta propertyo tar value paite: console.log(Object.entries(student)[1]);
+
+              *another way to get a value and property:
+                                     var propertyNAme='marks';
+                              var properValue=student[propertyNAme];
+                              console.log(propertyNAme,properValue);
+
+     a. looping through object:
+                       for loop:
+                             var shoppingCart={
+                books:5,
+                pen:10,
+                sharpner:2,
+                eraser:4,
+                scale:3
+             }
+             var keys=Object.keys(shoppingCart);
+             for(var i=0;i<keys.length;i++){
+                var items=keys[i];
+                var value=shoppingCart[items];
+                console.log(items,value)
+             }
+
+                 b. for in loop:
+
+                         var shoppingCart={
+                books:5,
+                pen:10,
+                sharpner:2,
+                eraser:4,
+                scale:3
+             }
+             for(var propertyName in shoppingCart){
+                var value=shoppingCart[propertyName];
+                console.log(propertyName,value)
+            }       
+-------------------------------------------------------------------------------------------
+
+Practice Problem:
+
+            1.    function foo(){
+                return 'foo';
+            }
+            function bar(){
+                return 'bar';
+            }
+            var fooBar=foo(bar());
+            console.log(fooBar);
+
+            2.var num=[1,2,3,4,5];
+                        
+                        var total=0;
+                        for(var i=0;i<num.length;i++){
+                         total += num[i]
+                        }
+                        var avg=total/num.length;
+                        console.log(avg);
+             
+             3. has return has parameter: 
+             function odd_even(integer){
+                                   if(integer%2==0){
+                                    return 'the number is even'
+                                   }
+                                   else if(integer%2!=0){
+                                    return 'the  number is oddd'
+                                   }
+                        }         
+                        console.log(odd_even(3));
+                no return has parameter: 
+                        function odd_even(integer){
+                                   if(integer%2==0){
+                                    console.log( 'the number is even');
+                                   }
+                                   else if(integer%2!=0){
+                                    console.log( 'the  number is oddd')
+                                   }
+                        }         
+                        odd_even(2);
+
+            4. using switch: 
+            
+             var signal='red';
+                        switch(signal){
+                            case 'red':
+                                console.log('danger');
+                                break;
+                                case 'green':
+                                    console.log('go');
+                                case 'yellow':
+                                    console.log('wait');
+                                default :
+                                console.log('run');
+                        }
+                        
