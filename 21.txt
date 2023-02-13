@@ -1,0 +1,126 @@
+SCRIPTING LANGUAGE:A scripting language is a programming language that is interpreted. It is translated into machine code when the code is run, rather than beforehand. Scripting languages are often used for short scripts over full computer programs. JavaScript, Python, and Ruby are all examples of scripting languages.
+
+1.var,let,const:
+
+  *var dia same name e akadhik variable  decleare kora jay. but let ar const dia jayna.
+  *const dia variable decleare korle setar ar new value set kora jayna.but let ar var dia jay.
+  
+  2.practice problm:
+  
+    inch to feet:
+                function inchToFeet(inch){
+    const feet=inch/12;
+    return feet;
+}
+const myFeet=inchToFeet(60);
+console.log(myFeet)
+
+  3.get  sum using fn: 
+               *return and initial sum er value alz loop er baire dhorte  hoa.karon loop er vitore dhorle same maan e bar bar ase.
+
+               function getSum(numbers){
+                        let total=0;
+                        for(let i=0;i < numbers.length; i++){
+                            const index=i;
+                            const element=numbers[index];
+                            total=total+element;
+                        console.log(index,element,total)
+
+                           
+                        }
+                        return total;
+                       }
+                       const numbers=[12,34,56,78,90];
+                       console.log(getSum(numbers))
+
+    4.get odd sum:
+    ->first have to find all the odd numbers fromthe following function.then will callthe previous fn to get the sum.
+
+                function getOddSum(oddNum){
+                        let oddNUmbers=[];
+                        for(let i=0;i<oddNum.length;i++){
+                            const indexOdd=i;
+                            const elementOdd=oddNum[indexOdd];
+                            if(elementOdd%2 !==0){
+                                 oddNUmbers.push(elementOdd);
+                                 
+                            }
+                        }
+                        return oddNUmbers;
+                       }
+                       const findOddFromNumbers=[12,23,34,45,56,67,68,67,56,56,45,45];
+                       const getOddNumSum=getOddSum(findOddFromNumbers);
+                    //    console.log(getSum(getOddNumSum));
+                    console.log(getOddNumSum)
+                    console.log(getSum(getOddNumSum))
+
+    5. sum and multiplication of some  numbers:
+
+                   function sum(numbers){
+                    let total=0;
+                    for(let i=1;i<=numbers;i++){
+                        total=total+i;
+                        console.log(i,total)
+                    }
+                    return total;
+                  }
+                  console.log(sum(5));
+
+                   function multiply(numbers){
+                    let total=1;
+                    for(let i=1;i<=numbers;i++){
+                        total=total*i;
+                        console.log(i,total)
+                    }
+                    return total;
+                  }
+                  console.log(multiply(5));
+               
+                -----------------reverse way------------------
+                  function multiply(numbers){
+                    let total=1;
+                    for(let i=5;i>=1;i--){
+                        total=total*i;
+                        console.log(i,total)
+                    }
+                    return total;
+                  }
+                  console.log(multiply(5));
+
+      6.using while loop :
+
+                    function multiply(numbers){
+                    let total=1;
+                    let i=1;
+                    while(i<=numbers){
+                        total=total*i;
+                        i++;
+                    }
+                    return total;
+                }
+                  console.log(multiply(5));
+
+        7.convert hour<=>mnt:
+                       function hourMnt(hours){
+                      const hour1=60;
+                      const minutes=hours*hour1;
+                      return minutes;
+                      
+                }
+                console.log(hourMnt(5))
+
+        8.find leap year from an array:
+                function findLeapYearArray(array){
+                    let newArray=[];
+                    for(i=0;i<array.length;i++){
+                        const element=array[i];
+                        if(element%2===0 && element%100!==0 ||element%400===0){
+                            newArray.push(element);
+                            
+                        }
+                    }
+                         return newArray;
+                }
+                const array=[2023,2024,2025,2028,2030,2016];
+                console.log(findLeapYearArray(array));
+

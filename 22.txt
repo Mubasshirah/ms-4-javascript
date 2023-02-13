@@ -1,0 +1,124 @@
+------------------>>>>>>>js-string-problems:<<<<<<<<<<<<---------------
+
+     a. tolowercase/touppercase: kono akta strimg er sob letter ke upper or lower case e transform korte use hoa.
+                   const userName='blackPink';
+const userInput='blackpink';
+if(userName.toLowerCase()===userInput.toLowerCase()){
+    console.log('valid user')
+}
+else{
+    console.log('invalid');
+
+}       
+
+*locallowercase/localuppercase holo country er upor depend kore change korahoa.
+----------string er vitor ache kina sta find korte-------------
+      b.string.includes:
+                    console.log(userName.includes('black')) 
+                    console.log(userName.toLowerCase().includes('black')) 
+                    console.log(userName.toLowerCase().includes('black'))
+
+     c.index of:  
+                    console.log(userInput.indexOf('pink'))
+
+    ----------------------------------------------------
+    d. startsWith/endsWith 
+
+    e.slice,split,subString:
+                  const lyrics='tumi bondhu kala pakhi.ami jeno ki.bosonto kale tomay dekhte parini.';
+            console.log(lyrics.split(' '));
+            console.log(lyrics.split('.'));
+            console.log(lyrics.split(''));
+            console.log(lyrics.slice(0,10));
+
+    f. join:
+                 const lyrics=['tumi','bondhu','kala','pakhi'];
+        console.log(lyrics.join(' '))
+        console.log(lyrics.join(', '))
+
+    g.
+
+
+------------->>>>>>>>>>problems from crackerz<<<<<<<<----------------
+1.reverse string:
+            function reverseString(string){
+            let newString='';
+            for(let i=string.length-1;i>=0;i--){
+                const single=string[i];
+                newString=newString+single;
+            } 
+            return newString;
+        }
+        console.log(reverseString('hello'));
+
+-------------------Math.-------------------(dorkare mdn er doc ta dekhbo)
+1.Math.abs -> difference ber korte ata use hoa.jate differnce value negative na ase.
+                             Math.abs(num1-num2)
+2.Math.round-> kono akta number ke round korte.
+                                     num=2.3456;
+                                     Math.round(num)
+3.Math.random-> random number day 
+         100 er moddhe chaile: Math.random()*100
+         4.Math.pow-> Math.pow(3,3)
+         5.Math.max-> 
+                    function mathMax(num1,num2,num3){
+                    const max=Math.max(num1,num2,num3);
+                  return max;
+                  }
+                  console.log (mathMax(34,54,65))
+
+--------------------swap--------------------------
+        let first=7;
+        let second=8;
+        console.log(first,second);
+        const temp=first;
+        first=second;
+        second=temp;
+        console.log(first,second)
+
+=============destructuring==============
+
+    [first,second]=[second,first];
+        console.log(first,second)
+
+-------------------practice problem--------------------------
+
+a. find tallest number from the array
+                                    function tallest(number){
+          let tallestNum=number[0];
+for(let i=0;i<number.length;i++){
+  const element=number[i];
+  if(element>tallestNum){
+    tallestNum=element;
+  }
+}
+return tallestNum;
+        }
+        const number=[23,34,45,56,76,1,2,987,];
+        console.log(tallest(number));
+
+b.reverse a sentence without reversing words:
+
+             function revSentence(sentence){
+                                                const splitSentence= sentence.split(' ');
+                                                let splitArray=[];
+                                                for(i=splitSentence.length-1;i>=0;i--){
+                                                  const element=splitSentence[i];
+                                                  splitArray.push(element);
+                                                  
+
+                                                }
+                                                const joinSplittedSentence=splitArray.join(' ');
+                                                return joinSplittedSentence;
+                                              }
+                                              const sentence='i love you so much';
+                                              console.log(revSentence(sentence));
+
+c. fibonacci series:
+                       const fibo=[0,1];
+                           for(i=2;i<10;i++){
+                            fibo[i]=fibo[i-1]+fibo[i-2];
+                           }
+
+                          
+                         console.log(fibo);

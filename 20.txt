@@ -18,7 +18,7 @@
                         but names[0]= 'x' dia set korle a er jaygay x hbena. ariba e thkbe.
 
                         ->>string is immutable.
-
+4. array.concat: array1.concat(array2)
 4,function:function is a block of code,that does a specific task whenever it is called.
               (declaration as same as variable)
             ->->->
@@ -155,6 +155,15 @@ Practice Problem:
             }
             var fooBar=foo(bar());
             console.log(fooBar);
+another way--------------------->
+            function foo(){
+                console.log('foo')
+                bar();
+               }
+               function bar(){
+                console.log('bar')
+               }
+               foo()
 
             2.var num=[1,2,3,4,5];
                         
