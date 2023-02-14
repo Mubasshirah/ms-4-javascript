@@ -1,0 +1,28 @@
+1. Recursive function: kono akta fn er vitor theke abar jodi oi fn ke call kora hoa tobe take recursive function bole.
+ 1. using recursive function find sum of first 50 numbers.
+                          function sum(i){
+                    if(i==1){
+                        return 1;
+                           }
+                    return i+sum(i-1);
+                         }
+                    console.log(sum(5));
+ 2.factorial using recursive function.
+        function factorial(i){
+                    if(i==1){
+                        return 1;
+                    }
+                    return i* factorial(i-1);
+                   }
+                   console.log(factorial(4))
+
+*****object er vitor object,array,function hoite pare.
+***** function er vitor arguments name e akta jinis ache.jeta array like object. not arrray.
+
+->-> for of loop:
+const numbers=[23,43,54,65,12];
+    for(const number of numbers){
+        console.log(number);
+    }
+
+    
